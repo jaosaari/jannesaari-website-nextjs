@@ -5,13 +5,19 @@ import Footer from './Footer';
 import Header from './Header';
 
 const GlobalStyles = createGlobalStyle`
-  @font-face {
+  ${
+    '' /* @font-face {
     font-family: 'radnika_next';
     src: url('/static/radnikanext-medium-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+  } */
   }
   :root {
+    --jaguar-grey: #272734;
+    --sandwisp-yellow: #D9D18B;
+    --chrome-white: #C7C4B9;
+    --storm-dust: #686760;
     --red: #ff0000;
     --black: #393939;
     --grey: #3A3A3A;
@@ -28,7 +34,9 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-    font-family: 'radnika_next', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    ${
+      '' /* font-family: 'radnika_next', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    }
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
@@ -42,7 +50,9 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: underline;
   }
   button {
-    font-family: 'radnika_next', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    ${
+      '' /* font-family: 'radnika_next', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', */
+    }
   }
 `;
 
@@ -58,6 +68,7 @@ export default function Page({ children }) {
       <GlobalStyles />
       <Header />
       <InnerStyles>{children}</InnerStyles>
+
       <Footer />
     </div>
   );

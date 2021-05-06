@@ -38,6 +38,8 @@ export default function Header() {
   return (
     <HeaderStyles>
       <div className="bar">
+
+      
         <Logo>
           <Link href="/">JanneSaari</Link>
         </Logo>
