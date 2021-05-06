@@ -4,7 +4,7 @@ export default function IndexPage() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Janne Saari</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
