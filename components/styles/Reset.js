@@ -1,7 +1,7 @@
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 // prettier-ignore
-export const reset = css`
+const Reset = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
    License: none (public domain)
@@ -55,6 +55,4 @@ table {
 }
 `
 
-export const Reset = createGlobalStyle`${reset}`;
-
-export default reset;
+export default Reset;
